@@ -4,4 +4,5 @@ public class semafuro {
     public class Dmenor {
         Scanner scanner = new Scanner(System.in);
     }
+    
 }
