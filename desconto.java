@@ -10,17 +10,23 @@ public class desconto {
 
         double compra = scanner.nextDouble();
 
-        if (compra > 100){
-            System.out.println("você ganhou 10% de desconto");
-        }
-        else if (compra > 200){
+        double descontoNUMB = 0;
+
+        if (compra > 200){
             System.out.println("você ganhou 20% de desconto");
+            descontoNUMB = 20;
+        }
+        else if (compra > 100 ){
+            System.out.println("você ganhou 10% de desconto");
+            descontoNUMB = 10;
         }
         else{
             System.out.println("Num tem desconto para jente como você! seu pobre nojento.");
         
         }
 
-        System.out.printf("");
+        double  desconto = compra * (descontoNUMB / 100);
+
+        System.out.printf("Sua compra tem agora o valor de :" + (compra - desconto) );
     }
 }
